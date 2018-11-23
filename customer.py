@@ -24,8 +24,12 @@ class Customer:
         if self.age < 3:
             return 0
 
-    def info_csv(self,):
+    def info_csv(self):
         print(f"{self.first_name} {self.family_name},{self.age},{self.entry_fee()}")
+
+    def info_split_tab(self):
+        print(f"{self.first_name} {self.family_name}    {self.age}    {self.entry_fee()}")
+
 
 if __name__ == "__main__":
     ken = Customer(first_name="Ken", family_name="Tanaka")
