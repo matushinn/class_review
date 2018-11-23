@@ -9,6 +9,7 @@ class Customer:
         print(f"{self.first_name} {self.family_name}")
 
     def entry_fee(self):
+
         if self.age > 65:
             return 1200
 
@@ -17,6 +18,9 @@ class Customer:
 
         if self.age < 20:
             return 1000
+
+        if self.age < 3:
+            return 0
 
     def info_csv(self,):
         print(f"{self.first_name} {self.family_name},{self.age},{self.entry_fee()}")
