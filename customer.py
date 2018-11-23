@@ -9,6 +9,8 @@ class Customer:
         print(f"{self.first_name} {self.family_name}")
 
     def entry_fee(self):
+        if self.age > 75:
+            return 500
 
         if self.age > 65:
             return 1200
