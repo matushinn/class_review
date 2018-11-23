@@ -21,6 +21,11 @@ class Customer:
             amount = 1000
             print(amount)
 
+    def info_csv(self,):
+        print(f"{self.first_name} {self.family_name},{self.age},{self.entry_fee()}")
+
+
+
 
 #ken = Customer(first_name="Ken", family_name="Tanaka")
 #ken.full_name()  # "Ken Tanaka" という値を返す
